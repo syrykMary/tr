@@ -1,0 +1,7 @@
+env: 
+  global: 
+    - test_var=test
+import: 
+  - 
+    if: env(test_var) IS present
+    source: "test.yml"
